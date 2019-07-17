@@ -106,7 +106,7 @@ body{
 			text-align: center;
 			color: #ffffff;
 			font-weight: 700;
-			font-size: 14px;
+			font-size: 16px;
 			font-family: $font1;
 			border: none;
 			background-image: url("../images/tl.svg"),url("../images/tr.svg"),url("../images/bl.svg"),url("../images/br.svg");
@@ -125,7 +125,7 @@ body{
 			&::placeholder{
 				color: #ffffff;
 				font-weight: 700;
-				font-size: 14px;
+				font-size: 16px;
 				font-family: $font1;
 				opacity: 1;
 				transition: opacity 0.2s linear;
@@ -225,7 +225,7 @@ body{
 				box-sizing: border-box;
 				padding: 0 30px;
 				color: #ffffff;
-				font-size: 14px;
+				font-size: 16px;
 				font-weight: 700;
 				&:focus{
 					outline: none;
@@ -238,7 +238,7 @@ body{
 				&::placeholder{
 					color: #ffffff;
 					font-weight: 700;
-					font-size: 14px;
+					font-size: 16px;
 					font-family: $font1;
 					opacity: 1;
 					transition: opacity 0.2s linear;
