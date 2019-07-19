@@ -43,7 +43,8 @@ body{
 
 
 .footer{
-	margin-top: 40px;
+	margin-top: 125px;
+	position: relative;
 	.flex-block{
 		display: flex;
 		padding: 0 30px;
@@ -85,6 +86,23 @@ body{
 		}
 	}
 
+	.center{
+		display: block;
+		position: absolute;
+		width: 178px;
+		left: calc(50% - 79px);
+		bottom: 15px;
+		svg{
+			width: 100%;
+		}
+		&:hover{
+			svg{
+				.cls-1, .cls-2 {
+					fill: #4caad8;
+				}
+			}
+		}
+	}
 }
 
 
