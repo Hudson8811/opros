@@ -43,7 +43,7 @@ body{
 
 
 .footer{
-	margin-top: 125px;
+	margin-top: 40px;
 	position: relative;
 	.flex-block{
 		display: flex;
@@ -87,13 +87,17 @@ body{
 	}
 
 	.center{
-		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		position: absolute;
-		width: 178px;
-		left: calc(50% - 79px);
-		bottom: 15px;
+		width: 36px;
+		height: 36px;
+		left: calc(50% - 13px);
+		top: calc(50% - 13px);
 		svg{
 			width: 100%;
+			max-height: 100%;
 		}
 		&:hover{
 			svg{
