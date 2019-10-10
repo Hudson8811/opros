@@ -1,117 +1,349 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-
-	<title>Формула</title>
-
-	<link rel="icon" href="favicon.ico">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
 	<link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
-	<div id="wrapper">
 
-		<div class="header">
-			<img src="images/logo.png" alt="" class="logo">
-		</div>
+	<div class="triple-columns-on-desktop">
+		<div class="tcod-item">
 
-		<div class="main">
-			<div id="test-block">
-				<form class="form"  id="contact-form">
-					<div class="input-block">
-						<input type="text" placeholder="ВАШЕ ИМЯ" required>
-					</div>
-					<div class="input-block">
-						<input type="text" placeholder="E-MAIL" required>
-					</div>
-					<div class="input-block">
-						<input type="text" name="phone" placeholder="ВАШ ТЕЛЕФОН" required>
-					</div>
-					<div class="btn-row">
-						<button type="submit" id="start-test">НАЧАТЬ ИГРУ</button>
-					</div>
-				</form>
-				<div id="vopros">
-					<div class="timer-row">
-						<div class="number-block">
-							ВОПРОС <span class="current-col">1</span><span class="total-col">/10</span>
-						</div>
-						<div class="timer">00:00</div>
-					</div>
-					<div class="vopros-content">
-						<div class="image-block">
-							<img src="images/vopros.jpg" alt="">
-						</div>
-						<form class="right-block" id="vopros-form">
-							<div class="text">УГАДАЙ ТЕННИСИСТА!</div>
-							<input type="text" class="otvet" placeholder="ВВЕДИТЕ ОТВЕТ" required>
-							<button type="submit">ДАЛЕЕ</button>
-						</form>
-					</div>
-				</div>
-				<div id="result">
-					<div class="title">СПАСИБО ЗА УЧАСТИЕ В НАЕШМ ТЕСТЕ!</div>
-					<div class="result-block">
-						<div class="text">ВАШ РЕЗУЛЬТАТ:</div>
-						<div class="result"><span class="you-store">10</span>/<span class="max-store">10</span></div>
-					</div>
-					<div class="present-block">
-						<div class="text">ВАШ ВЫИГРЫШ:</div>
-						<div class="present">БЛА БЛА ЛЯ ЛЯ ЛЯ МЯУ МЯУ</div>
-					</div>
-					<div class="help-block">
-						ПО ЛЮБЫМ ВОПРОСАМ ОБРАЩАЙТЕСЬ<br>
-						<a href="mailto:support@mail.com">SUPPORT@MAIL.COM</a>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="footer">
-			<div class="flex-block">
-				<div class="left">
-					<a href="#" target="_blank" class="link">
-						<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><g><g><path fill="#fff" d="M0 5h5v5h.555L10 0 0 4.444z"/></g></g></svg>
-						<span>FORMULATX.COM</span>
-					</a>
-					<a href="#" target="_blank" class="link">
-						<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><g><g><path fill="#fff" d="M0 5h5v5h.555L10 0 0 4.444z"/></g></g></svg>
-						<span>SPBOPEN.COM</span>
-					</a>
-				</div>
-				<div class="right">
-					<div class="links">
-						<a href="#" target="_blank" class="link">#ITSTENNISTIME</a>
-						<a href="#" target="_blank" class="link">#FORMULATX</a>
-						<a href="#" target="_blank" class="link">#SPBOPEN</a>
-					</div>
-					<div class="soc-block">
-						<a href="#" target="_blank" class="link"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><g><g><path fill="#fff" d="M17 4.288v8.424A4.293 4.293 0 0 1 12.713 17H4.288a4.293 4.293 0 0 1-4.29-4.288V4.288A4.294 4.294 0 0 1 4.289 0h8.424a4.293 4.293 0 0 1 4.289 4.288zm-1.85 0a2.441 2.441 0 0 0-2.438-2.438H4.288a2.441 2.441 0 0 0-2.439 2.438v8.424a2.441 2.441 0 0 0 2.439 2.438h8.424a2.441 2.441 0 0 0 2.439-2.438zm-3.167-.297a1.037 1.037 0 0 1 2.073 0 1.037 1.037 0 0 1-2.073 0zM12.88 8.5a4.384 4.384 0 0 1-4.38 4.378A4.384 4.384 0 0 1 4.122 8.5 4.384 4.384 0 0 1 8.5 4.12 4.384 4.384 0 0 1 12.879 8.5zm-1.85 0a2.531 2.531 0 0 0-2.53-2.528A2.532 2.532 0 0 0 5.972 8.5 2.532 2.532 0 0 0 8.5 11.029a2.532 2.532 0 0 0 2.528-2.53z"/></g></g></svg></a>
-						<a href="#" target="_blank" class="link"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="17" viewBox="0 0 8 17"><g><g><path fill="#fff" d="M1.729 17H5.28V8.494h2.384s.223-1.372.332-2.873H5.294V3.665c0-.293.387-.686.77-.686H8V0H5.368c-3.727 0-3.64 2.865-3.64 3.293v2.34H0v2.862h1.729v8.505z"/></g></g></svg></a>
-						<a href="#" target="_blank" class="link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12"><g><g><path fill="#fff" d="M3.794 8.25c.772 1.11 1.659 2.09 2.805 2.784 1.298.787 2.695 1.025 4.169.952.689-.035.896-.226.927-.953.022-.498.076-.995.307-1.443.228-.44.573-.522.97-.249a2.8 2.8 0 0 1 .524.496c.388.449.763.913 1.165 1.347.505.546 1.104.867 1.856.802h2.913c.469-.032.713-.642.443-1.198-.19-.389-.438-.734-.701-1.069-.595-.759-1.296-1.404-1.96-2.09-.597-.619-.635-.978-.155-1.692.525-.78 1.089-1.528 1.618-2.304.494-.725 1.001-1.448 1.26-2.314.166-.554.02-.798-.514-.896-.092-.016-.188-.016-.282-.016L15.97.403c-.39-.006-.605.174-.743.542-.187.495-.38.99-.602 1.468-.502 1.085-1.065 2.134-1.853 3.02-.175.196-.368.444-.659.342-.362-.14-.47-.776-.463-.99L11.647.908c-.07-.553-.187-.801-.706-.909H7.649c-.438 0-.66.182-.895.472-.134.169-.175.278.103.334.545.11.855.485.936 1.065.13.928.121 1.86.046 2.792a2.717 2.717 0 0 1-.167.796c-.16.401-.417.482-.755.235-.304-.222-.519-.535-.73-.85-.79-1.183-1.419-2.458-1.933-3.798-.148-.388-.405-.622-.791-.629A77.229 77.229 0 0 0 .609.417c-.57.01-.742.305-.508.856C1.136 3.715 2.29 6.089 3.794 8.25z"/></g></g></svg></a>
-						<a href="#" target="_blank" class="link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14"><g><g><path fill="#fff" d="M.349 11.747c-.35-1.52-.35-3.182-.35-4.747 0-1.567.005-3.227.354-4.748C.596 1.182 1.467.395 2.513.278 4.993 0 7.503-.002 10.003 0c2.499-.001 5.009 0 7.489.278 1.047.117 1.917.905 2.162 1.974C20.003 3.772 20 5.433 20 7c0 1.565-.001 3.227-.35 4.747-.245 1.069-1.115 1.857-2.162 1.975-2.48.277-4.989.278-7.49.277-2.498.001-5.008 0-7.488-.277-1.047-.118-1.917-.906-2.161-1.975zm7.07-8.272v6.643l6.358-3.311C11.644 5.688 9.538 4.586 7.42 3.475z"/></g></g></svg></a>
-						<a href="#" target="_blank" class="link"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14"><g><g><path fill="#fff" d="M0 12.411A9.776 9.776 0 0 0 5.346 14c6.415 0 9.924-5.385 9.924-10.056 0-.152-.004-.305-.01-.457A7.13 7.13 0 0 0 17 1.656a6.92 6.92 0 0 1-2.003.558A3.539 3.539 0 0 0 16.53.258c-.674.405-1.42.7-2.215.858A3.462 3.462 0 0 0 11.77 0C9.844 0 8.282 1.582 8.282 3.534c0 .277.03.547.09.806C5.474 4.192 2.904 2.784 1.184.647A3.551 3.551 0 0 0 .71 2.423c0 1.226.616 2.308 1.552 2.942a3.431 3.431 0 0 1-1.58-.442v.044c0 1.713 1.202 3.141 2.798 3.466a3.443 3.443 0 0 1-1.576.06c.444 1.404 1.732 2.426 3.259 2.454A6.937 6.937 0 0 1 0 12.411z"/></g></g></svg></a>
-					</div>
-				</div>
-			</div>
-
-			<a href="http://www.m4u.agency" target="_blank" class="center">
-				<svg xmlns="http://www.w3.org/2000/svg" width="177.93" height="153.08" viewBox="0 0 177.93 153.08"><defs><style>.cls-1,.cls-2{fill:#fff;}.cls-2{fill-rule:evenodd;}</style></defs><path class="cls-1" d="M-1492.77,419.47l6.35-2.76v.83l-5.49,2.38,5.49,2.27V423l-6.35-2.66v-.9Zm11.47,4.36h-.9l5.66-10.15h.9l-5.66,10.15Zm10.79,0V413.68h4.42a2.39,2.39,0,0,1,1.7.65,2.08,2.08,0,0,1,.68,1.56v5.74a2.08,2.08,0,0,1-.68,1.56,2.38,2.38,0,0,1-1.7.64Zm4.35-9.39h-3.51v8.64h3.51a1.55,1.55,0,0,0,1.14-.46,1.51,1.51,0,0,0,.47-1.12V416a1.53,1.53,0,0,0-.47-1.13,1.58,1.58,0,0,0-1.14-.45Zm8.81,9.39h-.84V413.68h.84v10.15Zm12.33-7h-.84v-.88a1.49,1.49,0,0,0-.47-1.12,1.53,1.53,0,0,0-1.14-.46h-1.9a1.57,1.57,0,0,0-1.15.46,1.49,1.49,0,0,0-.46,1.12v5.65a1.52,1.52,0,0,0,.46,1.13,1.61,1.61,0,0,0,1.15.46h1.9a1.57,1.57,0,0,0,1.14-.46,1.53,1.53,0,0,0,.47-1.13v-2h-2.64v-.74h3.48v2.92a2.08,2.08,0,0,1-.68,1.55,2.39,2.39,0,0,1-1.7.65h-2a2.42,2.42,0,0,1-1.72-.65,2.05,2.05,0,0,1-.69-1.55V415.8a2.06,2.06,0,0,1,.69-1.56,2.41,2.41,0,0,1,1.72-.64h2a2.38,2.38,0,0,1,1.7.64,2.08,2.08,0,0,1,.68,1.56v1Zm6.37,7h-.85V413.68h.85v10.15Zm8.26,0h-.84v-9.41h-2.84v-.74h6.39v.74h-2.71v9.41Zm9.12-10.22h.84l3.58,10.22h-.85l-1.13-3.26h-4.06l-1.12,3.26h-.85l3.59-10.22Zm.41,1.09-1.77,5.12h3.54l-1.77-5.12Zm14.21,8.38v.75h-5.27V413.68h.84v9.4Zm9.25,1.64v.72h-6.11v-.72Zm7-11.11h.84l3.58,10.22h-.85l-1.13-3.26H-1392l-1.12,3.26h-.85l3.59-10.22Zm.41,1.09-1.77,5.12h3.54l-1.77-5.12Zm15.57,2.11h-.84v-.88a1.52,1.52,0,0,0-.46-1.12,1.57,1.57,0,0,0-1.15-.46h-1.9a1.57,1.57,0,0,0-1.15.46,1.52,1.52,0,0,0-.46,1.12v5.65a1.56,1.56,0,0,0,.46,1.13,1.61,1.61,0,0,0,1.15.46h1.9a1.61,1.61,0,0,0,1.15-.46,1.56,1.56,0,0,0,.46-1.13v-2h-2.64v-.74h3.48v2.92a2.08,2.08,0,0,1-.68,1.55,2.39,2.39,0,0,1-1.7.65h-2a2.42,2.42,0,0,1-1.72-.65,2.05,2.05,0,0,1-.69-1.55V415.8a2.06,2.06,0,0,1,.69-1.56,2.41,2.41,0,0,1,1.72-.64h2a2.38,2.38,0,0,1,1.7.64,2.08,2.08,0,0,1,.68,1.56v1Zm11.33,6.27v.75h-5.8V413.68h5.65v.74H-1368v3.74h4.48v.74H-1368v4.18Zm6.35.75h-.84V413.68h.87l5.08,8.67v-8.68h.85v10.16h-.87l-5.09-8.68v8.68Zm17.21-3.2h.84v1.09a2.11,2.11,0,0,1-.68,1.55,2.39,2.39,0,0,1-1.7.65h-1.78a2.42,2.42,0,0,1-1.72-.65,2.05,2.05,0,0,1-.69-1.55V415.8a2.06,2.06,0,0,1,.69-1.56,2.41,2.41,0,0,1,1.72-.64h1.78a2.35,2.35,0,0,1,1.7.65,2.08,2.08,0,0,1,.68,1.55v1h-.84v-.88a1.49,1.49,0,0,0-.47-1.12,1.55,1.55,0,0,0-1.14-.46h-1.67a1.53,1.53,0,0,0-1.14.46,1.49,1.49,0,0,0-.47,1.12v5.65a1.53,1.53,0,0,0,.47,1.13,1.57,1.57,0,0,0,1.14.46h1.67a1.59,1.59,0,0,0,1.14-.46,1.53,1.53,0,0,0,.47-1.13v-.95Zm9.63,3.2h-.84V419.6l-3.43-5.92h.89l2.94,5.16,2.8-5.16h.86l-3.22,5.92v4.23Zm13.8-4.36v.9l-6.35,2.66v-.84l5.49-2.27-5.49-2.38v-.83l6.35,2.76Z" transform="translate(1492.77 -272.36)"/><polygon class="cls-2" points="0.15 118.86 25.24 118.86 25.24 52.23 44.48 93.77 51.3 93.77 51.3 53.16 26.26 0 0.15 0 0.15 118.86 0.15 118.86"/><path class="cls-2" d="M-1437.22,326.73v39.4h34.9q.36,10.49,9.57,18.14a33.8,33.8,0,0,0,15.51,7.07v-119h-25.09v.17l-34.89,54.2Zm13.86,17.19,21-32.56v32.56Z" transform="translate(1492.77 -272.36)"/><path class="cls-2" d="M-1351.46,370h-14.25a13.38,13.38,0,0,1-7.28-1.88V392c1,.11,2,.18,3.09.23h24q13.48-.63,21.87-7.92,9.15-8,9.15-19V272.36h-24.92v87.5a9.07,9.07,0,0,1-3.31,7.54,13,13,0,0,1-8.39,2.63Z" transform="translate(1492.77 -272.36)"/></svg>
+			<a href="https://fito-moscow.ru/wp-content/uploads/2016/01/cartina-iz-mha.jpg"
+				class="fancybox image tcod-item__pic">
+				<img title="картины из ягеля"
+					src="https://fito-moscow.ru/wp-content/uploads/2016/01/cartina-iz-mha-420x239.jpg"
+					alt="картины из ягеля">
 			</a>
+
+			<div class="tcod-item__text">
+				<b>Картины из ягеля 18 цветов</b> и оттенков. Купить картину их мха в Москве можно у нас. Рамки из
+				любого материала по запросу клиента. Размеры – любые. На вторую картину из мха скидка 10%.
+			</div>
+		</div>
+		<div class="tcod-item">
+			<a href="https://fito-moscow.ru/wp-content/uploads/2016/01/kartiny-iz-mha.png"
+				class="fancybox image tcod-item__pic">
+				<img title="экокартины из стабилизированного мха ягеля"
+					src="https://fito-moscow.ru/wp-content/uploads/2016/01/kartiny-iz-mha-420x211.png"
+					alt="экокартины из стабилизированного мха ягеля">
+			</a>
+
+			<div class="tcod-item__text">
+				<b>Экокартины ( фитокартины )</b> из стабилизированного ягеля и 100% натурального лесного мха. Любая
+				степень сложности. 15 цветов мха.
+			</div>
+		</div>
+		<div class="tcod-item">
+			<a href="https://fito-moscow.ru/wp-content/uploads/2016/01/fito-kartiny.jpg"
+				class="fancybox image tcod-item__pic">
+				<img title="фитокартины из мха"
+					src="https://fito-moscow.ru/wp-content/uploads/2016/01/fito-kartiny-420x321.jpg"
+					alt="фитокартины из мха">
+			</a>
+
+			<div class="tcod-item__text">
+				<b>Фитокартины</b> из скандинавского мха. Экологичный стиль. Гарантия на работы 1 год. Бесплатная
+				консультация дизайнера.
+			</div>
+		</div>
+		<div class="tcod-item">
+
+			<a href="https://fito-moscow.ru/wp-content/uploads/2015/08/kartina-iz-mha-1.jpg"
+				class="fancybox image tcod-item__pic">
+				<img title="картина из кочкового мха"
+					src="https://fito-moscow.ru/wp-content/uploads/2015/08/kartina-iz-mha-1-420x420.jpg"
+					alt="картина из кочкового мха">
+			</a>
+
+			<div class="tcod-item__text">
+				<b>Картины из кочкового мха </b>
+				Франции и России по вашему проекту. бесплатный эскиз и подбор рам.3
+			</div>
+		</div>
+		<div class="tcod-item">
+			<a href="https://fito-moscow.ru/wp-content/uploads/2016/01/figury-iz-mha.jpg"
+				class="fancybox image tcod-item__pic">
+				<img title="фигуры из мха"
+					src="https://fito-moscow.ru/wp-content/uploads/2016/01/figury-iz-mha-420x420.jpg"
+					alt="фигуры из мха">
+			</a>
+
+			<div class="tcod-item__text">
+				<b>Фигуры, буквы, декор из мха.</b> Бесплатный дизайн – проект.
+			</div>
+		</div>
+		<div class="tcod-item">
+
+
+			<a href="https://fito-moscow.ru/wp-content/uploads/2016/01/IMG-20190903-WA0030.jpg"
+				class="fancybox image  tcod-item__pic">
+				<img title="купить картину их мха от 2500 р."
+					src="https://fito-moscow.ru/wp-content/uploads/2016/01/IMG-20190903-WA0030-414x420.jpg"
+					alt="купить картину их мха от 2500 р.">
+			</a>
+
+			<div class="tcod-item__text">
+				<b>Экологичные картины</b> природного стиля. Любой дизайн и стиль. Художественное оформление.
+			</div>
+		</div>
+		<div class="tcod-item">
+
+			<a href="https://fito-moscow.ru/wp-content/uploads/2016/01/kartina-iz-rasteniy.jpg"
+				class="fancybox image tcod-item__pic">
+				<img title="картина из растений"
+					src="https://fito-moscow.ru/wp-content/uploads/2016/01/kartina-iz-rasteniy-420x313.jpg"
+					alt="картина из растений">
+			</a>
+
+			<div class="tcod-item__text">
+				<b>Картины из растений, мха, цветов.</b> Экодизайн.
+			</div>
+		</div>
+		<div class="tcod-item">
+
+
+			<a href="https://fito-moscow.ru/wp-content/uploads/2016/01/nadpisi-iz-mha.jpg"
+				class="tcod-item__pic fancybox image">
+				<img title="надписи из мха"
+					src="https://fito-moscow.ru/wp-content/uploads/2016/01/nadpisi-iz-mha-420x420.jpg"
+					alt="надписи из мха">
+			</a>
+
+			<div class="tcod-item__text">
+				<b>Надписи из мха</b> любой сложности. Любые размеры. Помощь художника заказчику.
+			</div>
+		</div>
+		<div class="tcod-item">
+			<a href="https://fito-moscow.ru/wp-content/uploads/2016/01/chasy-iz-mha.jpg"
+				class="tcod-item__pic fancybox image">
+				<img src="https://fito-moscow.ru/wp-content/uploads/2016/01/chasy-iz-mha.jpg">
+			</a>
+			<div class="tcod-item__text">
+				<b>Часы и фигуры из мха </b>
+			</div>
 		</div>
 	</div>
-	
 
 
 
-
-	<script src="js/main.js"></script>
 
 </body>
+
 </html>
+
+
+<!--
+
+<style>@media (max-width:600px){.shtuki-iz-mha{display:block;max-width:100%;height:auto!important}.shtuki-iz-mha tbody{display:block;height:auto!important}.shtuki-iz-mha tbody tr{display:block;height:auto!important}.shtuki-iz-mha tbody tr td{height:auto!important;display:block;width:100%!important;max-width:100%!important}.shtuki-iz-mha *{text-align:center!important;float:none!important}.shtuki-iz-mha img{margin:15px auto!important;max-width:100%;height:auto}}</style>
+
+<style>
+	.ozel-pom{background-color:#f7f2f2;margin-bottom:20px}.ozel-pom .bottom,.ozel-pom .top{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%}.ozel-pom .bottom a,.ozel-pom .top a{display:block;padding:10px 25px 10px 10px}.ozel-pom .bottom img,.ozel-pom .top img{width:auto;height:100%;max-height:100%;width:450px}.ozel-pom .bottom .text,.ozel-pom .top .text{padding:15px;font-family:arial,helvetica,sans-serif;font-size:19px}.ozel-pom .bottom .text p,.ozel-pom .top .text p{margin:0}.ozel-pom .top .left{width:100%}.ozel-pom .top .right{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.ozel-pom .bottom .left{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.ozel-pom .bottom .right{width:100%}@media (max-width:900px){.ozel-pom .bottom,.ozel-pom .top{padding:15px 30px;max-width:calc(100% - 60px);-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.ozel-pom .bottom a,.ozel-pom .top a{text-align:center;width:100%;padding:0}.ozel-pom .bottom img,.ozel-pom .top img{padding:0;max-width:100%;width:100%;max-height:unset;height:auto}.ozel-pom .bottom .text,.ozel-pom .top .text{font-size:16px;padding-left:0;padding-right:0}.ozel-pom .bottom .right{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.ozel-pom .top .left{width:unset}.ozel-pom .bottom .right{width:unset}}@media (max-width:400px){.ozel-pom .bottom,.ozel-pom .top{padding:15px 15px;max-width:calc(100% - 30px)}.ozel-pom .bottom .text,.ozel-pom .top .text{font-size:15px}}
+	</style>
+	<p style="text-align: center;"><span style="font-family: arial, helvetica, sans-serif; font-size: 24pt;">ОЗЕЛЕНЕНИЕ
+			ПОМЕЩЕНИЙ</span></p>
+
+	<div class="ozel-pom">
+		<div class="top">
+			<div class="left">
+				<a href="https://fito-moscow.ru/wp-content/uploads/2017/07/0.jpg" class="fancybox image">
+<img
+						title="фитодизайн" src="https://fito-moscow.ru/wp-content/uploads/2017/07/0.jpg"
+						alt="фитодизайн">
+</a>
+			</div>
+			<div class="right">
+				<div class="text">
+					<p> Директора и владельцы предприятий, сфера бизнеса и услуг населению, торговые центры, банки,
+						торговые и бизнес центры, автосалоны, клиники, магазины – наши клиенты. </p>
+					<p> Уже 10 лет мы работаем в сфере услуг с руководителями и собственниками организаций.
+						Фитодизайн интерьера и помещений, озеленение офиса – не прихоть, а жизненная необходимость.</p>
+					<p> Главная цель нашей компании – создание благоприятного экологичного пространства из живых
+						растений для эффективной работоспособности людей и развития бизнеса.</p>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="left">
+				<div class="text">
+					<p> Фитодизайн в офисе или озеленение помещений “под ключ” с последующим сервисным уходом за
+						растениями с гарантий – работа Фитокорпорации.</p>
+					<p>Выполняем любые заказы по озеленению офисов в Москве и по уходу за растениями (сервисное
+						обслуживание растений, лечение ) в короткие сроки по гарантийному договору.</p>
+					<p>Озеленение офиса и помещений может быть проведено со скидкой от 10 до 20% от сметы по озеленению
+						при условии заказа вашей организации ухода за цветами нашими флористами после окончания работ по
+						озеленению.</p>
+					<p>Подробности по телефону – звоните!</p>
+				</div>
+			</div>
+			<div class="right">
+
+				<a href="https://fito-moscow.ru/wp-content/uploads/2015/08/IMG_6497.png" class="fancybox image">
+<img
+						src=https://fito-moscow.ru/wp-content/uploads/2015/08/IMG_6497.png"
+						alt="озеленение офисов и бизнес-центров" sizes="(max-width: 417px) 100vw, 417px">
+</a>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<style>.uslugi{margin:0 auto;width:1180px;max-width:100%}.uslugi .uslugi-flex-wrap{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0 -5px}.uslugi a{width:calc(33.333333% - 10px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;margin:5px}.uslugi a img{max-width:100%;height:auto}@media (max-width:800px){.uslugi a{width:calc(50% - 10px)}}@media (max-width:500px){.uslugi a{width:100%}}</style>
+	<div class="uslugi">
+		<div class="uslugi-flex-wrap">
+			<a href="/uslugi/fitodizajn/">
+<img src="https://fito-moscow.ru/wp-content/uploads/2019/10/fito_dizain1.png"
+					alt="fito_dizain" width="393" height="244">
+</a>
+			<a href="/uslugi/lechenie-rastenij/">
+<img
+					src="https://fito-moscow.ru/wp-content/uploads/2019/10/u_lechenie_rastenii2.png"
+					alt="u_lechenie_rastenii" width="393" height="244">
+</a>
+			<a href="/uslugi/arenda_rasteniy-cvetov/">
+<img
+					src="https://fito-moscow.ru/wp-content/uploads/2019/10/u_arenda_rastenii.png"
+					alt="u_arenda_rastenii" width="393" height="244">
+</a>
+			<a href="/uslugi/uhod-za-rasteniyami/">
+<img
+					src="https://fito-moscow.ru/wp-content/uploads/2019/10/u_uhod_za_cvetami.png" alt="uhod_za_cvetami"
+					width="393" height="244">
+</a>
+			<a href="/uslugi/ozelenenieofisov/">
+<img
+					src="https://fito-moscow.ru/wp-content/uploads/2019/10/ozelenenie_ofisov.png"
+					alt="ozelenenieofisov&quot;" width="393" height="244">
+</a>
+			<a href="/uslugi/uslugi-florista/">
+<img
+					src="https://fito-moscow.ru/wp-content/uploads/2019/10/uslugi_florista3.png" alt="uslugi_florista"
+					width="393" height="244">
+</a>
+
+		</div>
+	</div>
+
+
+
+	<!DOCTYPE html>
+	<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<link rel="icon" href="favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+		<link href="css/main.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,700i,900&display=swap" rel="stylesheet">
+	</head>
+
+	<div class="broshura">
+		<section class="section-1">
+			<div class="left">
+
+<img src="" alt="">
+				<div class="text-1">
+					<div class="text-1-1">What are </div>
+					<div class="text-1-2">Zir<span>Teeth<span>?</span></span></div>
+				</div>
+				<div class="text-2">
+					Zir stands for zirconia, the most biocompatible, esthetic
+					and not to mention virtually unbreakable teeth. Because of
+					its natural feel and strenght, there are no chipping, cracking
+					or breaking in the mouth.
+				</div>
+				<div class="bottom-part">
+
+<img src="" alt="">
+					<div class="text-3">ZirTeeth are Zirconia teeth
+						that are held by Dental Implants.
+						Typically 6 on the top and 5 on
+						the bottom.</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="left">
+					<div class="text-1">
+						<div class="text-1-1">Science behind</div>
+						<div class="text-1-2">bullet proof</div>
+						<div class="text-1-3">technology</div>
+					</div>
+					<div class="text-2">The Process</div>
+					<div class="text-3">ZirTeeth begin their journey as chalky
+						white blocks that are milled to their
+						designed shape. After, a liquid dye is
+						used to color and shape.</div>
+					<div class="circle-cards">
+						<div class="item" style="background: url('');">
+							<div class="number">1</div>
+						</div>
+						<div class="item" style="background: url('');">
+							<div class="number">2</div>
+						</div>
+						<div class="item" style="background: url('');">
+							<div class="number">3</div>
+						</div>
+						<div class="item" style="background: url('');">
+							<div class="number">4</div>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="img"></div>
+					<div class="text-1">Zirconium is one of the most
+						abundant elements in the earth’s
+						crust. zirconia is formed by the
+						addition of oxygen to the pure,
+						elemental zirconium metal powder.
+						The addition of minor components
+						to the zirconia, such as yttrium, can
+						produce
+						a
+						crystal
+						that
+						is
+						both
+						strong and resistant to crack
+						generation because of the unique
+						“transformation
+						toughening”
+						that
+						occurs when zirconia goes from a
+						tetragonal phase to a monolithic
+						phase. This monolithic phase of
+						zirconia
+						that
+						is
+						so
+						resistant
+						to
+						break age
+						when
+						used
+						in
+						full-coverage restorations.</div>
+				</div>
+			</div>
+		</section>
+		<section class="section-2"></section>
+		<section class="section-3"></section>
+
+	</div>
+	</div>
+
+	</html>
+	-->
